@@ -12,7 +12,9 @@ export default function Dictionary(props) {
 
   function handleDictionaryResponse(response) {
     setResults(response.data[0]);
+    setLoaded(true);
   }
+
   function handlePexelsResponse(response) {
     setPhotos(response.data.photos);
   }
@@ -36,7 +38,6 @@ export default function Dictionary(props) {
     setWord(event.target.value);
   }
   function load() {
-    setLoaded(true);
     search();
   }
   if (loaded) {
