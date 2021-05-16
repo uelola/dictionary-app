@@ -17,15 +17,11 @@
   background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
   background-repeat: no-repeat;
   background-position: right center;
-  -webkit-appearance: none;
 }
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+[type="search"]::-webkit-search-cancel-button {
   appearance: none;
 }
-.Dictionary input:focus,
-textarea:focus {
+.Dictionary input:focus {
   border-radius: 5px;
   border: 1px solid #edb8f5 !important;
   box-shadow: 0 0 3px #edb8f5 !important;
@@ -33,7 +29,6 @@ textarea:focus {
   -webkit-box-shadow: 0 0 3px #edb8f5 !important;
 }
 .Dictionary input:focus,
-textarea:focus,
 select:focus {
   outline-offset: 0px !important;
   outline: none !important;
