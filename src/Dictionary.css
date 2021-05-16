@@ -25,8 +25,6 @@
   border-radius: 5px;
   border: 1px solid #edb8f5 !important;
   box-shadow: 0 0 3px #edb8f5 !important;
-  -moz-box-shadow: 0 0 3px #edb8f5 !important;
-  -webkit-box-shadow: 0 0 3px #edb8f5 !important;
 }
 .Dictionary input:focus,
 select:focus {
