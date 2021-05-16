@@ -25,7 +25,7 @@ export default function Dictionary(props) {
     axios.get(apiUrl).then(handleDictionaryResponse);
 
     const pexelsApiKey = `563492ad6f917000010000018e2b700e435d451ebfd12d1b18e79259`;
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=6`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=9`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
@@ -50,7 +50,7 @@ export default function Dictionary(props) {
               className="input"
               type="search"
               autoFocus="on"
-              placeholder={props.defaultWord}
+              defaultValue={props.defaultWord}
               onChange={handleWordChange}
               onClick={search}
             />
