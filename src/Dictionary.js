@@ -50,7 +50,7 @@ export default function Dictionary(props) {
               className="input"
               type="search"
               autoFocus="on"
-              defaultValue={props.defaultWord}
+              placeholder={props.defaultWord}
               onChange={handleWordChange}
               onClick={search}
             />
